@@ -55,7 +55,7 @@ for documento in tqdm(dados, desc="Processando documentos"):
 
 random.shuffle(dados_sinteticos)
 
-output_file_path = 'env/perguntas_respostas.json'
+output_file_path = 'env/dados_sinteticos.json'
 with open(output_file_path, 'w', encoding='utf-8') as file:
     json.dump(dados_sinteticos, file, ensure_ascii=False, indent=4)
 
